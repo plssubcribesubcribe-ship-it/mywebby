@@ -1023,7 +1023,7 @@ function displayFeaturedZones(featuredZones) {
     const lazyImages = document.querySelectorAll('#featuredZones img.lazy-zone-img');
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting && !zoneViewer.hidden) {
+           zoneViewer.hidden = true; {
                 const img = entry.target;
                 img.src = img.dataset.src;
                 img.classList.remove("lazy-zone-img");
@@ -1647,7 +1647,7 @@ HTMLCanvasElement.prototype.toDataURL = function (...args) {
       } catch (error) {}
     </script>
     <script>
-      navigator.serviceWorker.register(location.protocol + '//' + location.hostname + '/sw.js')
+    navigator.serviceWorker.register('./sw.js')
     </script>
 </body>
 </html>
