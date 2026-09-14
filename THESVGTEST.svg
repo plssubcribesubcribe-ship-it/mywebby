@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+
+      <style>
+        body{
+          font-family:Arial,sans-serif;
+          background:#111;
+          color:#fff;
+          text-align:center;
+          padding:40px;
+        }
+        button,input{
+          padding:10px;
+          margin:5px;
+        }
+        #adminPanel{
+          display:none;
+          border:1px solid #444;
+          padding:20px;
+          margin-top:20px;
+        }
+    </style> <h1>Paid Access</h1> <input id="codeInput" placeholder="Access Code"> <button onclick="login()">Enter</button> <div id="terms" style="display:none"> <h3>Terms & Conditions</h3> <p>No sharing. No refunds.</p> <button onclick="openCherry()">CHERRY</button> <button onclick="openNocturne()">nocturne</button> <button onclick="openGnMath()">GnMath</button> </div> <div id="adminPanel"> <h2>Admin Panel</h2> <input id="newCode" placeholder="New Code"> <button onclick="addCode()">Add Code</button> <h3>Codes</h3> <ul id="codeList"></ul> <h3>Logs</h3> <ul id="logList"></ul> </div> <script type="module"> // your Firebase code... </script></div>
+  </foreignObject>
+</svg>
